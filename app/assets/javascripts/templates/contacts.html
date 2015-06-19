@@ -1,19 +1,17 @@
-<h1>All Contacts</h1>
-<nit-advanced-searchbox ng-model="searchParams" parameters="availableSearchParams" placeholder="Search..."></nit-advanced-searchbox>
-
 <section>
   <div class="large-3 left column">
+    <h1>All Contacts</h1>
+    <nit-advanced-searchbox ng-model="searchParams" parameters="availableSearchParams" placeholder="Search..."></nit-advanced-searchbox>
     <ul ng-repeat="contact in contacts">
-      <li ng-bind="contact.lastname" ></li>
-      <li ng-bind="contact.firstname" ></li>
+      <li class="name" ng-click="showContactDetails(contact)">{{contact.lastname}}, {{contact.firstname}}</li>
     </ul>
   </div>
   <div class="large-7 left column">
-    <h1>Wendy Hsu</h1>
+    <h1>{{contactDetails.name}}</h1>
     <ul>
-      <li> Phone: 604123456 </li>
-      <li> Email: first@changeheroes.com </li>
-      <li> Address: 200 Water St </li>
+      <li> Phone: {{contactDetails.phone}} </li>
+      <li> Email: {{contactDetails.email}} </li>
+      <li> Address: {{contactDetails.address}} </li>
     </ul>
   </div>
 </section>
