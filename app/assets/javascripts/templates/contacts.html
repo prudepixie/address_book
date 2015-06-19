@@ -1,10 +1,19 @@
-<h1>Contacts Template </h1>
-{{contacts}}
-<div ng-repeat="contact in contacts">
-  <span ng-bind="contact.firstname" ></span>
-  <span ng-bind="contact.lastname" ></span>
-  <span ng-bind="contact.phone" ></span>
-  <span ng-bind="contact.address" ></span>
-  <span ng-bind="contact.email" ></span>
-</div>
+<h1>All Contacts</h1>
 <nit-advanced-searchbox ng-model="searchParams" parameters="availableSearchParams" placeholder="Search..."></nit-advanced-searchbox>
+
+<section>
+  <div class="large-3 left column">
+    <ul ng-repeat="contact in contacts">
+      <li ng-bind="contact.lastname" ></li>
+      <li ng-bind="contact.firstname" ></li>
+    </ul>
+  </div>
+  <div class="large-7 left column">
+    <h1>Wendy Hsu</h1>
+    <ul>
+      <li> Phone: 604123456 </li>
+      <li> Email: first@changeheroes.com </li>
+      <li> Address: 200 Water St </li>
+    </ul>
+  </div>
+</section>
