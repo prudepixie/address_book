@@ -10,13 +10,14 @@ section {
 
   nav {
     padding-bottom: 25px;
+
     img {
       height: 45px;
     }
   }
 
   > div {
-    height: 479px;
+    height: 600px;
   }
 
   input {
@@ -25,13 +26,15 @@ section {
     height: 30px;
     border: none;
     border-radius: 25px;
+    font-size: 15px;
+    color: #969595;
   }
 
   li {
     list-style: none;
   }
 
-  h2 {
+  h3 {
     text-align: center;
   }
 
@@ -44,18 +47,20 @@ section {
 
     ul {
       padding: 0;
-      margin: 0;
+      margin: 20px 5px 0 5px;
+      cursor: pointer;
 
       li {
         border-bottom: 1px solid #acacac;
         padding: 10px;
-        margin: 0 5px;
+
+        &:first-child {
+          border-top: 1px solid #acacac;
+        }
+
         &:hover {
           background: #bbb;
         }
-        // &:first-child {
-        //   border-top: 1px solid #acacac;
-        // }
       }
     }
   }
@@ -68,13 +73,30 @@ section {
       position: absolute;
       right: 12px;
       top: 12px;
-      background-color: #ccc;
+      background-color: #bababa;
+      border-radius: 5px;
       border: none;
+      color: rgb(107, 106, 106);
       width: 45px;
     }
 
-    li {
-      padding-bottom: 20px;
+    ul {
+      padding-left: 15px;
+      margin-top: 40px;
+
+      li {
+        padding-bottom: 20px;
+        color: #969595;
+
+        h1 {
+          color: #606060;
+          margin-bottom: 10px;
+        }
+
+        span {
+          padding-left: 20px;
+        }
+      }
     }
 
     .edit-modal {
@@ -89,6 +111,14 @@ section {
         margin-top: 20px;
         padding: 10px 50px;
         height: 300px;
+
+        span {
+          padding-left: 0;
+        }
+
+        button {
+          margin-right: 5px;
+        }
       }
 
       input {

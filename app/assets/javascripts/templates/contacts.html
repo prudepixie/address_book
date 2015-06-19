@@ -3,19 +3,19 @@
     <img src="/assets/ch-logo.png">
   </nav>
   <div class="large-3 left">
-    <h2>All Contacts</h2>
-    <input class="large-10 center" placeholder="Search" ng-model="searchText"></input >
-    <ul ng-repeat="contact in contacts | filter:searchText">
-      <li class="name" ng-click="showContactDetails(contact)">{{contact.lastname}}, {{contact.firstname}}</li>
+    <h3>All Contacts</h3>
+    <input class="large-10 center" placeholder="Search" ng-model="searchText"></input>
+    <ul>
+      <li class="name" ng-repeat="contact in contacts | filter:searchText" ng-click="showContactDetails(contact)">{{contact.lastname}}, {{contact.firstname}}</li>
     </ul>
   </div>
   <div class="large-9 left">
     <button class="edit" ng-click="editContact(contactDetails.firstname)">edit</button>
     <ul>
       <li><h1>{{contactDetails.firstname}} {{contactDetails.lastname}}</h1></li>
-      <li> Phone: {{contactDetails.phone}} </li>
-      <li> Email: {{contactDetails.email}} </li>
-      <li> Address: {{contactDetails.address}} </li>
+      <li> Phone: <span ng-bind="contactDetails.phone"></span></li>
+      <li> Email: <span ng-bind="contactDetails.email"></span></li>
+      <li> Address: <span ng-bind="contactDetails.address"></span></li>
     </ul>
     <div class="edit-modal" ng-show="toggleEditModal">
       <ul class="center large-8">
@@ -40,4 +40,3 @@
     </div>
   </div>
 </section>
-<div><img src="/assets/CH_Contact_WF.png"></div>
