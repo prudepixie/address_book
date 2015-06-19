@@ -7,11 +7,16 @@
     </ul>
   </div>
   <div class="large-7 left column">
-    <h1>{{contactDetails.name}}</h1>
+    <button ng-click="editContact(contactDetails.firstname)">Edit</button>
+    <h1>{{contactDetails.firstname}} {{contactDetails.lastname}}</h1>
     <ul>
       <li> Phone: {{contactDetails.phone}} </li>
       <li> Email: {{contactDetails.email}} </li>
       <li> Address: {{contactDetails.address}} </li>
     </ul>
+    <div class="edit-modal" ng-show="toggleEditModal">
+      <h1>Edit Contact</h1>
+
+    </div>
   </div>
 </section>
