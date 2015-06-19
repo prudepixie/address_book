@@ -1,0 +1,240 @@
+/* line 2, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.left {
+  float: left;
+}
+
+/* line 7, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.right {
+  float: right;
+}
+
+/* line 12, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 17, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.hide {
+  display: none;
+}
+
+/* line 22, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.show {
+  display: block;
+}
+
+/* line 27, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 34, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.column {
+  padding-left: 0.46875rem;
+  padding-right: 0.46875rem;
+}
+
+/* line 40, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-1 {
+  width: 8.33333%;
+}
+
+/* line 44, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-2 {
+  width: 16.66667%;
+}
+
+/* line 48, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-3 {
+  width: 25%;
+}
+
+/* line 52, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-4 {
+  width: 33.33333%;
+}
+
+/* line 56, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-5 {
+  width: 41.66667%;
+}
+
+/* line 60, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-6 {
+  width: 50%;
+}
+
+/* line 64, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-7 {
+  width: 58.33333%;
+}
+
+/* line 68, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-8 {
+  width: 66.66667%;
+}
+
+/* line 72, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-9 {
+  width: 75%;
+}
+
+/* line 76, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-10 {
+  width: 83.33333%;
+}
+
+/* line 80, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-11 {
+  width: 91.66667%;
+}
+
+/* line 84, /Users/wendy/code/mks/address_book/app/assets/stylesheets/framework.scss */
+.large-12 {
+  width: 100%;
+}
+/* line 5, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section {
+  padding: 35px;
+  padding-top: 10px;
+  color: #606060;
+  font-family: sans-serif;
+}
+/* line 11, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section nav {
+  padding-bottom: 25px;
+}
+/* line 14, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section nav img {
+  height: 45px;
+}
+/* line 19, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section > div {
+  height: 600px;
+}
+/* line 23, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section input {
+  display: block;
+  padding: 0px 13px;
+  height: 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #969595;
+}
+/* line 33, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section li {
+  list-style: none;
+}
+/* line 37, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section h3 {
+  text-align: center;
+}
+/* line 41, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 {
+  background: #ccc;
+}
+/* line 44, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 h2 {
+  margin-bottom: 10px;
+}
+/* line 48, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 ul {
+  padding: 0;
+  margin: 20px 5px 0 5px;
+  cursor: pointer;
+}
+/* line 53, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 ul li {
+  border-bottom: 1px solid #acacac;
+  padding: 10px;
+}
+/* line 57, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 ul li:first-child {
+  border-top: 1px solid #acacac;
+}
+/* line 61, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-3 ul li:hover {
+  background: #bbb;
+}
+/* line 68, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 {
+  background: #eee;
+  position: relative;
+}
+/* line 72, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 button.edit {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: #bababa;
+  border-radius: 5px;
+  border: none;
+  color: #6b6a6a;
+  width: 45px;
+}
+/* line 83, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 ul {
+  padding-left: 15px;
+  margin-top: 40px;
+}
+/* line 87, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 ul li {
+  padding-bottom: 20px;
+  color: #969595;
+}
+/* line 91, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 ul li h1 {
+  color: #606060;
+  margin-bottom: 10px;
+}
+/* line 96, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 ul li span {
+  padding-left: 20px;
+}
+/* line 102, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 .edit-modal {
+  background: rgba(0, 0, 0, 0.67);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+/* line 109, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 .edit-modal ul {
+  background: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  height: 300px;
+}
+/* line 115, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 .edit-modal ul span {
+  padding-left: 0;
+}
+/* line 119, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 .edit-modal ul button {
+  margin-right: 5px;
+}
+/* line 124, /Users/wendy/code/mks/address_book/app/assets/stylesheets/landing.scss */
+section .large-9 .edit-modal input {
+  width: 200px;
+  display: inline;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
