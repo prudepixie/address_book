@@ -14,5 +14,6 @@
 //= require angular
 //= require angular-route
 //= require angular-rails-templates
+//= require angular-advanced-searchbox
 //= require jquery_ujs
 //= require_tree .

@@ -1,4 +1,4 @@
-var app = angular.module('heroesAddressBook', ['ngRoute', 'templates'])
+var app = angular.module('heroesAddressBook', ['ngRoute', 'templates', 'angular-advanced-searchbox'])
 
 app.config(function ($routeProvider) {
     $routeProvider

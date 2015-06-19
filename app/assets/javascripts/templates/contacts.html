@@ -1,2 +1,10 @@
 <h1>Contacts Template </h1>
 {{contacts}}
+<div ng-repeat="contact in contacts">
+  <span ng-bind="contact.firstname" ></span>
+  <span ng-bind="contact.lastname" ></span>
+  <span ng-bind="contact.phone" ></span>
+  <span ng-bind="contact.address" ></span>
+  <span ng-bind="contact.email" ></span>
+</div>
+<nit-advanced-searchbox ng-model="searchParams" parameters="availableSearchParams" placeholder="Search..."></nit-advanced-searchbox>

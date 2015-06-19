@@ -1,8 +1,8 @@
 app.service('contactsService', function () {
-       this.getContacts = function () {
-        return contacts;
-
+     this.getContacts = function () {
+      return contacts;
     };
+
     var contacts = [
     {
       "firstname":"Cameron",
