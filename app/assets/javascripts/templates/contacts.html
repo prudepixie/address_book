@@ -1,22 +1,43 @@
 <section>
-  <div class="large-3 left column">
-    <h1>All Contacts</h1>
-    <nit-advanced-searchbox ng-model="searchParams" parameters="availableSearchParams" placeholder="Search..."></nit-advanced-searchbox>
-    <ul ng-repeat="contact in contacts">
+  <nav>
+    <img src="/assets/ch-logo.png">
+  </nav>
+  <div class="large-3 left">
+    <h2>All Contacts</h2>
+    <input class="large-10 center" placeholder="Search" ng-model="searchText"></input >
+    <ul ng-repeat="contact in contacts | filter:searchText">
       <li class="name" ng-click="showContactDetails(contact)">{{contact.lastname}}, {{contact.firstname}}</li>
     </ul>
   </div>
-  <div class="large-7 left column">
-    <button ng-click="editContact(contactDetails.firstname)">Edit</button>
-    <h1>{{contactDetails.firstname}} {{contactDetails.lastname}}</h1>
+  <div class="large-9 left">
+    <button class="edit" ng-click="editContact(contactDetails.firstname)">edit</button>
     <ul>
+      <li><h1>{{contactDetails.firstname}} {{contactDetails.lastname}}</h1></li>
       <li> Phone: {{contactDetails.phone}} </li>
       <li> Email: {{contactDetails.email}} </li>
       <li> Address: {{contactDetails.address}} </li>
     </ul>
     <div class="edit-modal" ng-show="toggleEditModal">
-      <h1>Edit Contact</h1>
-
+      <ul class="center large-8">
+        <li>
+          <h1>Edit Contact</h1>
+          <span>(click to edit)</span>
+        </li>
+        <li> Phone:
+          <input ng-model="contactDetails.phone"></input>
+        </li>
+        <li> Email:
+          <input ng-model="contactDetails.email"></input>
+        </li>
+        <li> Address:
+          <input ng-model="contactDetails.address"></input>
+        </li>
+        <li>
+           <button class="right" ng-click="closeEditModal()">Cancel</button>
+           <button class="right" ng-click="closeEditModal()">Save</button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
+<div><img src="/assets/CH_Contact_WF.png"></div>

@@ -1,6 +1,13 @@
 app.controller('ContactsCtrl', ['$scope', 'contactsService', function($scope, contactsService){
      $scope.contacts = contactsService.getContacts();
-     $scope.contactDetails = $scope.contacts[0];
+     $scope.contactDetails = {
+      'firstname' : 'Cameron',
+      'lastname'  : 'Dubas',
+      'phone'     : '6047280012',
+      'address'   : '289 Abbott St., Vancouver, BC, V3M 2L7',
+      'email'     : 'cameron@changeheroes.com'
+    };
+
      $scope.toggleEditModal = false;
 
      $scope.showContactDetails = function(contact) {
@@ -15,5 +22,8 @@ app.controller('ContactsCtrl', ['$scope', 'contactsService', function($scope, co
         $scope.toggleEditModal = true;
      };
 
+     $scope.closeEditModal = function () {
+      $scope.toggleEditModal = false;
+     }
   }
 ]);

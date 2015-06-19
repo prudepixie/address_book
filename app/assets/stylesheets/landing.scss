@@ -2,10 +2,99 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.edit-modal {
-  background: rgba(0, 0, 0, 0.67);
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
+section {
+  padding: 35px;
+  padding-top: 10px;
+  color: #606060;
+  font-family: sans-serif;
+
+  nav {
+    padding-bottom: 25px;
+    img {
+      height: 45px;
+    }
+  }
+
+  > div {
+    height: 479px;
+  }
+
+  input {
+    display: block;
+    padding: 0px 13px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .large-3 {
+    background: #ccc;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        border-bottom: 1px solid #acacac;
+        padding: 10px;
+        margin: 0 5px;
+        &:hover {
+          background: #bbb;
+        }
+        // &:first-child {
+        //   border-top: 1px solid #acacac;
+        // }
+      }
+    }
+  }
+
+  .large-9 {
+    background: #eee;
+    position: relative;
+
+    button.edit {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      background-color: #ccc;
+      border: none;
+      width: 45px;
+    }
+
+    li {
+      padding-bottom: 20px;
+    }
+
+    .edit-modal {
+      background: rgba(0, 0, 0, 0.67);
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+
+      ul {
+        background: white;
+        margin-top: 20px;
+        padding: 10px 50px;
+        height: 300px;
+      }
+
+      input {
+        width: 200px;
+        display: inline;
+      }
+    }
+  }
 }
